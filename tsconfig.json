@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "emitDeclarationOnly": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "src",
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "src/@types"
+    ],
+    "noImplicitThis": false,
+    "types": [
+      "node"
+    ]
+  },
+  "lib": [
+    "es2018"
+  ],
+  "include": [
+    "src/**/*",
+    "package.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

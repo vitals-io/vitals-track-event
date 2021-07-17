@@ -1,0 +1,17 @@
+{
+  "name": "Garden Sharing",
+  "version": "1.0.0",
+  "description": "Garden sharing back-end official docs proudly powered by <a href='https://azero.it' target='_blank'>Azero</a>",
+  "title": "Garden Sharing API Documentation",
+  "url": "https://devapi.gardensharing.it",
+  "sampleUrl": "https://devapi.gardensharing.it",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  },
+  "header": {
+    "title": "Modules"
+  },
+  "order": [
+  ]
+}

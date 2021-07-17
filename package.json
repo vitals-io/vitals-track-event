@@ -1,0 +1,59 @@
+{
+  "name": "vitals-node-template",
+  "version": "1.0.0-beta.1",
+  "description": "Vitals tempalte for node package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./src/index.ts",
+    "generate-doc": "apidoc -i src/ -o doc/",
+    "clean": "npx rimraf dist .cache",
+    "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "lint": "tsc --noEmit && eslint \"src/*.{js,ts}\" --quiet --fix",
+    "build-ts": "tsc",
+    "build": "npm run clean && npm run build-ts",
+    "build-server": "npm run build-ts && npm run copy-static-assets && npm run generate-doc"
+  },
+  "dependencies": {
+    "@sentry/node": "^6.9.0",
+    "@sentry/tracing": "^6.8.0",
+    "chalk": "4.1.1",
+    "commander": "6.1.0",
+    "execa": "^5.1.1",
+    "fs-extra": "^10.0.0",
+    "inquirer": "8.1.0",
+    "js-yaml": "4.1.0",
+    "node-fetch": "^2.6.1",
+    "node-machine-id": "^1.1.12",
+    "np": "^7.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.1",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitals-io/vitals-package-template"
+  },
+  "author": "Stefano Gagliardi <stefano.gagliardi@sitisrl.it> (https://github.com/StefanoGagliardi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitals-io/vitals-package-template/issues"
+  },
+  "homepage": "https://github.com/vitals-io/vitals-package-template",
+  "keywords": [
+    "library",
+    "starter",
+    "es6"
+  ]
+}
