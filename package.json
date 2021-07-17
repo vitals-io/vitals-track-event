@@ -1,7 +1,7 @@
 {
-  "name": "vitals-node-template",
+  "name": "vitals-track-event",
   "version": "1.0.0-beta.1",
-  "description": "Vitals tempalte for node package",
+  "description": "Vitals Track event library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -36,14 +36,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vitals-io/vitals-package-template"
+    "url": "https://github.com/vitals-io/vitals-track-event"
   },
-  "author": "Stefano Gagliardi <stefano.gagliardi@sitisrl.it> (https://github.com/StefanoGagliardi)",
+  "author": "Stefano Gagliardi <info.vitals.io@gmail.com> (https://github.com/vitals-io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vitals-io/vitals-package-template/issues"
+    "url": "https://github.com/vitals-io/vitals-track-event/issues"
   },
-  "homepage": "https://github.com/vitals-io/vitals-package-template",
+  "homepage": "https://github.com/vitals-io/vitals-track-event",
   "keywords": [
     "library",
     "starter",
