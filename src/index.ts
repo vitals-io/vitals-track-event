@@ -1,5 +1,5 @@
 // Imort core
-import sentry from '@sentry/node';
+import * as Sentry from "@sentry/node";
 import os from 'os';
 
 // Imoport custom
@@ -14,7 +14,7 @@ class VitalsTrackEvent implements TrackEventClass {
      * Initial sentry with provided key
      */
     console.log('======= SENTRY BEFORE INIT KEY: ==========', sentryDsn);
-    sentry.init({
+    Sentry.init({
       dsn: sentryDsn,
     });
 
@@ -22,7 +22,7 @@ class VitalsTrackEvent implements TrackEventClass {
      * Set machine and env variables for sentry event
      */
     console.log('======= SENTRY SCOPE: ==========', scope);
-    sentry.configureScope(function (sentryScope) {
+    Sentry.configureScope(function (sentryScope) {
       const tags = {
         os_type: os.type(),
         os_platform: os.platform(),
